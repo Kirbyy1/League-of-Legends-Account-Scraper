@@ -32,3 +32,7 @@ Contributions are welcome! Please open a pull request with any changes or improv
 
 # License
 This project is licensed under the MIT License.
+
+# Disclaimer
+Scraping of websites is not always allowed by the site owners and can potentially lead to consequences such as IP ban or legal action. This scraper was created for educational purposes only and its use is not encouraged by the author. The author takes no responsibility for any actions taken as a result of using this code.
+
