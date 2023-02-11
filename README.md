@@ -7,7 +7,7 @@ A python library for retrieving data from the website LeagueOfGraphs for a summo
 
 # Installation
 ```
-pip install -r requirements.txt
+pip install requests bs4
 ```
 
 # Usage
