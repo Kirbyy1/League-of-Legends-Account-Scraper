@@ -10,7 +10,7 @@ A python library for retrieving data from the website LeagueOfGraphs for a summo
 pip install -r requirements.txt
 ```
 
-
+# Usage
 ```py
 from DataRetriever import DataRetriever
 
