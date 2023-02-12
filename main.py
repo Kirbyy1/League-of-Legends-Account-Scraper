@@ -27,7 +27,7 @@ class DataRetriever:
             Scrape the data of a summoner's account from LeagueOfGraphs.
             :param display_name: the summoner's display name
             :param region: the region of the summoner's account
-            :return: a tuple containing the summoner's data as a dictionary and the display name
+            :return: a dict containing the summoner's data as a dictionary
         """
 
         page: bytes = self.fetch_page(self.URL.format(region=region.lower(), display_name=display_name))
