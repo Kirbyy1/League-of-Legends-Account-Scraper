@@ -6,6 +6,7 @@ from requests import Response
 
 class DataRetriever:
     BASE: str = "https://www.leagueofgraphs.com/summoner/"
+    URL = "https://www.leagueofgraphs.com/summoner/{region}/{display_name}/last-30-days"
     HEADERS: dict = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari"}
 
@@ -30,9 +31,7 @@ class DataRetriever:
             :return: a tuple containing the summoner's data as a dictionary and the display name
         """
 
-        URL: str = f"{self.BASE}{region.lower()}/{display_name}/last-30-days"
-
-        page: bytes = self.fetch_page(URL)
+        page: bytes = self.fetch_page(self.URL.format(region=region.lower(), display_name=display_name))
 
         if page == "":
             return None
