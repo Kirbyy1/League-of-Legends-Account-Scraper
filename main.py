@@ -5,7 +5,6 @@ from requests import Response
 
 
 class DataRetriever:
-    BASE: str = "https://www.leagueofgraphs.com/summoner/"
     URL = "https://www.leagueofgraphs.com/summoner/{region}/{display_name}/last-30-days"
     HEADERS: dict = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari"}
